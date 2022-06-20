@@ -1,0 +1,17 @@
+
+<div style="color:red;" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{title}}</h1>
+  </div>
+</div>
+
+<ul style="font-size: large; margin-left: 50ch;" #j>
+  <li>Each correct answer will give you 1 points</li>
+  <li>There is no negative marking applicable</li>
+  <li>The answer will be validated once the submit button is clicked</li>
+
+</ul>
+<button (click)="optionClick(j)" style="text-align: center; margin-left:17cm;" onclick=" this.disabled=true;getElementById('button1').style.display = 'block'; this.style.display = 'none' " class="btn btn-primary" id="button1" routerLink="questions">start Quiz</button>
+
+
+<router-outlet></router-outlet>
